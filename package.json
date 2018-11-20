@@ -1,0 +1,34 @@
+{
+  "name": "@behaver/earth-ssb",
+  "version": "1.0.0",
+  "description": "The calcultor for earth ssb velocity and position.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behaver/earth-ssb.git"
+  },
+  "keywords": [
+    "ssb"
+  ],
+  "author": "Sanwan, Dong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/behaver/earth-ssb/issues"
+  },
+  "homepage": "https://github.com/behaver/earth-ssb#readme",
+  "dependencies": {
+    "@behaver/jdate": "^2.2.0"
+  },
+  "devDependencies": {
+    "@behaver/angle": "^2.0.2",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
