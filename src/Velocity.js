@@ -1,6 +1,7 @@
 'use strict';
 
 const { JDateRepository, CacheSpaceOnJDate } = require('@behaver/jdate');
+const { RectangularCoordinate3D } = require('@behaver/coordinate');
 
 /**
  * Velocity
@@ -245,12 +246,14 @@ class Velocity {
    *
    * 单位：10^-8 AU/日
    * 
-   * @return {Object} 地球相对太阳质心(SSB)速度向量
+   * @return {RectangularCoordinate3D} 地球相对太阳质心(SSB)速度向量
    */
   get vector() {
     if (!this.cache.has('vector')) this.calc();
 
-    return this.cache.get('vector');
+    let v = this.cache.get('vector');
+
+    return new RectangularCoordinate3D(v.x, v.y, v.z);
   }
 }
 

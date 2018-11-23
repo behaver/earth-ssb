@@ -1,6 +1,7 @@
 'use strict';
 
 const { JDateRepository, CacheSpaceOnJDate } = require('@behaver/jdate');
+const { RectangularCoordinate3D } = require('@behaver/coordinate');
 
 /**
  * Position
@@ -142,12 +143,14 @@ class Position {
   /**
    * 获取地球相对太阳质心(SSB)位置向量
    * 
-   * @return {Object} 地球相对太阳质心(SSB)位置向量
+   * @return {RectangularCoordinate3D} 地球相对太阳质心(SSB)位置向量
    */
   get vector() {
     if (!this.cache.has('vector')) this.calc();
 
-    return this.cache.get('vector');
+    let v = this.cache.get('vector');
+
+    return new RectangularCoordinate3D(v.x, v.y, v.z);
   }
 }
 
