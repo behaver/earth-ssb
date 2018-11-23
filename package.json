@@ -1,6 +1,6 @@
 {
   "name": "@behaver/earth-ssb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The calcultor for earth ssb velocity and position.",
   "main": "index.js",
   "directories": {
