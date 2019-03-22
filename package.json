@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/behaver/earth-ssb#readme",
   "dependencies": {
-    "@behaver/coordinate": "^3.3.0",
+    "@behaver/coordinate": "^3.3.1",
     "@behaver/jdate": "^2.3.0"
   },
   "devDependencies": {
